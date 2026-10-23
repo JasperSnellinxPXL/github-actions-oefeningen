@@ -28,4 +28,4 @@ jobs:
 
       - name: Toon de gekozen environment
         if: always()
-        run: echo "Gekozen environment: $ENVIRONMENT"
+        run: 'echo "Gekozen environment: $ENVIRONMENT"'
