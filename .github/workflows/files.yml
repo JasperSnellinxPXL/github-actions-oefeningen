@@ -1,0 +1,20 @@
+name: Directory and File Manipulation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Maak een nieuwe directory aan
+        run: mkdir my-directory
+
+      - name: Schrijf een bestand in de directory
+        run: echo "Dit is een korte tekst." > my-directory/hello.txt
+
+      - name: Toon de inhoud van de directory
+        run: ls -la my-directory
+
+      - name: Toon de inhoud van het bestand
+        run: cat my-directory/hello.txt
